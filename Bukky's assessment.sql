@@ -42,7 +42,8 @@ Set commission = 0.09
 WHERE agent_code in (	SELECT agent_code 
                         FROM CUSTOMER 
                         WHERE outstanding_amt > (SELECT AVG(outstanding_amt) FROM CUSTOMER)
-					);
+	       
+		     );
 
 
 
